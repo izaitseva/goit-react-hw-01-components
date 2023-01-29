@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const StyledDiv = styled.div`
-    border: 1px solid black;
-    width: 400px;
+    width: 350px;
+    background-color: white;
     margin: auto;
+    border: 1px solid #398888;
+    border-radius: 6px;
 `
 
 export const ProfileInfo = styled.div`
@@ -12,6 +14,7 @@ export const ProfileInfo = styled.div`
 
 export const Avatar = styled.img`
    width: 250px;
+   margin-top: 10px;
    height: 200px;
    object-fit: cover;
    display: block;
@@ -57,8 +60,10 @@ export const Stats = styled.ul`
     display: flex;
     padding-left: 0;
     align-items: center;
-    justify-content: center;
     background-color: azure;
+    justify-content: center;
+    border-top: 1px solid #398888;
     width: 100%;
+    height: 90px;
     margin: 0;
 `
