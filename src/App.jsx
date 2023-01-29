@@ -8,6 +8,8 @@ import data from "./data.json";
 import friends from "./friends.json"
 import transactions from "./transactions.json"
 
+import {DivStyle} from "./App.styled"; 
+
 export const App = () => {
   return (
     <div
@@ -28,10 +30,10 @@ export const App = () => {
         stats={user.stats}
       />
 
-      <div>
+      <DivStyle>
         <Statistics title="Upload stats" stats={data} />
         <Statistics stats={data} />
-      </div>
+      </DivStyle>
 
       <div>
         <FriendList friends={friends} />

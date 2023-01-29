@@ -1,35 +1,36 @@
-import './Profile.css';
+import './Profile.styled.jsx';
 import PropTypes from "prop-types";
+import {StyledDiv, Avatar, UserDescription, UserName, UserProps, ProfileItem, Stats, ProfileInfo } from "./Profile.styled";
 
 export const Profile = ({ username, tag, location, avatar, stats: { followers, likes, views } }) => {
     return (
-        <div className="profile">
-            <div className="description">
-                <img
+        <StyledDiv>
+            <ProfileInfo>
+                <Avatar
                     src={avatar}
                     alt="User avatar"
                     className="avatar"
                 />
-                <p className="name">{username}</p>
-                <p className="tag">{tag}</p>
-                <p className="location">{location}</p>
-            </div>
+                <UserName>{username}</UserName>
+                <UserDescription>{tag}</UserDescription>
+                <UserDescription>{location}</UserDescription>
+            </ProfileInfo>
 
-            <ul className="stats">
-                <li>
-                    <span className="label">Followers</span>
-                    <span className="quantity">{followers}</span>
-                </li>
-                <li>
-                    <span className="label">Views</span>
-                    <span className="quantity">{views}</span>
-                </li>
-                <li>
-                    <span className="label">Likes</span>
-                    <span className="quantity">{likes}</span>
-                </li>
-            </ul>
-        </div>
+            <Stats>
+                <ProfileItem>
+                    <UserProps>Followers</UserProps>
+                    <UserProps>{followers}</UserProps>
+                </ProfileItem>
+                <ProfileItem>
+                    <UserProps>Views</UserProps>
+                    <UserProps>{views}</UserProps>
+                </ProfileItem>
+                <ProfileItem>
+                    <UserProps>Likes</UserProps>
+                    <UserProps>{likes}</UserProps>
+                </ProfileItem>
+            </Stats>
+        </StyledDiv>
     )
 }
 

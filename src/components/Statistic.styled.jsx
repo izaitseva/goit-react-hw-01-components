@@ -4,16 +4,20 @@ export const Section = styled.section`
     display: flex;
     flex-direction: column;
    justify-content: center;
-   gap: 0;
+   height: 200px;
+   width: 100%;
+   background-color: azure;
+   border: 1px solid darkgray;
+   text-align: center;
 `
 
 export const Title = styled.h2`
-    font-size: larger;
     font-style: italic;
     margin: 10px 0;
 `
 
 export const Statlist = styled.ul`
+    justify-content: center;
     list-style: none;
     padding-left: 0;
     display: flex;
