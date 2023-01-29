@@ -34,7 +34,6 @@ export const App = () => {
       </div>
 
       <div>
-
         <FriendList friends={friends} />
       </div>
 
