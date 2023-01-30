@@ -3,7 +3,7 @@ import { FriendListItem } from "./FriendListItem"
 
 export const FriendList = ({ friends }) => {
     return (
-        <ul class="friend-list">
+        <ul className="friend-list">
             {friends.map(friend => (
                 <FriendListItem
                     avatar={friend.avatar}
@@ -19,4 +19,4 @@ FriendListItem.propTypes = {
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     isOnline: PropTypes.oneOf(['true', 'false']),
-}
+}.isRequired

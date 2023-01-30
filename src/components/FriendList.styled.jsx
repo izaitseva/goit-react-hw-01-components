@@ -21,14 +21,6 @@ export const Avatar = styled.img`
 export const Ident = styled.span`
 width: 40px;
 height: 100%;
-background-color: ${({isOnline}) => {
 
-    if (isOnline === true) {
-        return 'green';
-    } else {
-        return 'red';
-    }
-}
-};
+background-color: ${({isOnline}) => isOnline ? "green" : "red"};
 `
-
