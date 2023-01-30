@@ -5,7 +5,7 @@ export const FriendListItem = ({avatar, name, isOnline}) => {
         <FriendsLi>
             <Ident isOnline={isOnline}>{isOnline}</Ident>
             <Avatar src={avatar} alt="User avatar" />
-            <p className="name">{name}</p>
+            <p className="name" >{name}</p>
         </FriendsLi>
     )
 }
