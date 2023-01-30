@@ -40,9 +40,8 @@ export const App = () => {
         <FriendList friends={friends} />
       </div>
 
-      <div>
-        <TransactionHistory items={transactions} />;
-      </div>
+        <TransactionHistory items={transactions} />
+
     </div>
   );
 };
