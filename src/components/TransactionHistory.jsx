@@ -15,7 +15,7 @@ export const TransactionHistory = ({ items }) => {
 
             <tbody>
                 {items.map(trans => (
-                <tr key={trans.id} data={trans} >
+                <tr key={trans.id} >
                     <TableD>{trans.type}</TableD>
                     <TableD>{trans.amount}</TableD>
                     <TableD>{trans.currency}</TableD>
@@ -25,7 +25,6 @@ export const TransactionHistory = ({ items }) => {
         </StyledTable>
     )
 }
-
 
 TransactionHistory.propTypes = {
     items: PropTypes.arrayOf(
